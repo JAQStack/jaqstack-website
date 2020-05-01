@@ -4,7 +4,7 @@ module.exports = {
     description: 'Build websites with Java, Angular, SQL or NoSQL',
     keywords: 'java,angular,typescript,sql,nosql,mysql,mongodb,software,development,technology,pogramming,developer',
   },
-  pathPrefix: `/gtc`,
+  pathPrefix: ``,
   plugins: [
     {
       resolve: 'gatsby-plugin-manifest',

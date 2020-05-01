@@ -15,7 +15,6 @@ Gatsby themes allow you to override configuration from the theme by defining the
   <AnchorLink>How to Build</AnchorLink>
   <AnchorLink>How to Deploy/Run</AnchorLink>
   <AnchorLink>Testing</AnchorLink>
-  <AnchorLink>Troubleshooting</AnchorLink>
 </AnchorLinks>
 
 ## System Requirements
@@ -78,18 +77,3 @@ Using Tomcat as an example:
 
 * Sample servlet `http://sampleserver.com:8080/jaq-stack-webapp/simple`
   ![jaq-stack-sample-screen-servlet](https://user-images.githubusercontent.com/902972/39284983-aeb1daac-48db-11e8-93c6-c3169d0de848.png)***Image:*** *Sample jaq-stack-webapp page on browser*
-
-
-## Troubleshooting
-* If `mvn package` command fails showing that **ng** fails,then run try this
-  ```shell
-  sudo npm install -g @angular/cli
-  ```
-
-* If installation of the above goes into infinite loop, then try this
-  ```
-  mkdir ~/.npm-global
-  npm config set prefix ~/.npm-global
-  export PATH=~/.npm-global/bin:$PATH
-  ```
-  Back on the command line, update your system variables: `source ~/.profile`
