@@ -26,6 +26,10 @@ const links = {
   ],
 };
 
-const CustomFooter = () => <Footer links={links} Content={Content} />;
+const FooterLogo = () => (
+  <img src="images/jaq-stack-logo-2019.png" alt="" />
+);
+
+const CustomFooter = () => <Footer links={links} Content={Content} Logo={FooterLogo} />;
 
 export default CustomFooter;
