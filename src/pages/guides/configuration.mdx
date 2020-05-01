@@ -10,241 +10,86 @@ Gatsby themes allow you to override configuration from the theme by defining the
 </PageDescription>
 
 <AnchorLinks>
-  <AnchorLink>Site metadata</AnchorLink>
-  <AnchorLink>Manifest</AnchorLink>
-  <AnchorLink>Favicon</AnchorLink>
-  <AnchorLink>Additional font weights</AnchorLink>
-  <AnchorLink>Image compression</AnchorLink>
-  <AnchorLink>Global search</AnchorLink>
-  <AnchorLink>Edit on Github link</AnchorLink>
-  <AnchorLink>Medium</AnchorLink>
-  <AnchorLink>Other options</AnchorLink>
+  <AnchorLink>System Requirements</AnchorLink>
+  <AnchorLink>Folder Structure</AnchorLink>
+  <AnchorLink>How to Build</AnchorLink>
+  <AnchorLink>How to Deploy/Run</AnchorLink>
+  <AnchorLink>Testing</AnchorLink>
+  <AnchorLink>Troubleshooting</AnchorLink>
 </AnchorLinks>
 
-## Site metadata
+## System Requirements
 
-To add a title and description to each page, simply provide them to siteMetadata in your `gatsby-config.js` file.
+* [Java 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+* [Angular CLI - Optional](https://cli.angular.io/)
+* [NodeJS](https://nodejs.org/en/download/)
+* [Apache Maven 3.x](https://maven.apache.org/download.cgi)
 
-The language attribute applied to the `<html>` tag on every page is English (`en`) by default, but you can choose to override this. For more information on declaring the language of a page in HTML, please review [W3 Criterion 3.1.1 Language of a Page](https://www.w3.org/WAI/WCAG21/Understanding/language-of-page).
+## Folder Structure
 
-```js
-module.exports = {
-  siteMetadata: {
-    title: 'Gatsby Theme Carbon',
-    description: 'A Gatsby theme for the carbon design system',
-    keywords: 'gatsby,theme,carbon',
-    lang: 'en',
-  },
-  plugins: ['gatsby-theme-carbon'],
-};
-```
+![jaq-stack-folder-structure](https://user-images.githubusercontent.com/902972/39322677-4277b364-4950-11e8-8de4-7c311a51511e.png)***Image:*** *JAQ Stack Monorepo - Folder structure*
 
-## Manifest
 
-One of the first configurations should be to override the default manifest options, you can do this in `gatsby-config.js`. Any options you don’t set, will be provided by the theme. See the example project.
+## How to Build - Monorepo
 
-```js
-siteMetadata: {
-    title: 'Gatsby Theme Carbon',
-  },
-  plugins: [
-    'gatsby-theme-carbon',
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        name: 'Carbon Design Gatsby Theme',
-        short_name: 'Gatsby Theme Carbon',
-        start_url: '/',
-        background_color: '#ffffff',
-        theme_color: '#0062ff',
-        display: 'browser',
-      },
-    },
-  ],
-```
+* Create a new directory and cd to it
+  ```shell
+  mkdir projects
+  cd projects
+  ```
+* Clone git repository  
+  ```shell
+  git clone https://github.com/ksurendra/jaqstack.git
+  ``` 
+  Note: 'ksurendra' will change for you. Copy from github
+* Jaq-stack directory will be created with sources in it
+  ```shell
+  cd jaq-stack
+  ```
+* Build the project
+  ```
+  mvn clean package
+  ```
+* If the build goes well, you will see the output as below
+  ![jaq-stack-sample-build-screen1](https://user-images.githubusercontent.com/902972/39282460-15835c04-48cf-11e8-8f04-2c4d699ac843.png)***Image:*** *Sample build screen 1*
+  
+  ![jaq-stack-sample-build-screen2](https://user-images.githubusercontent.com/902972/39282459-156fa466-48cf-11e8-8c3f-ecc852b4d2df.png)***Image:*** *Sample build screen 2*
+* The above will generate a `war` file named under `/jaq-stack/target/jaq-stack-webapp.war`
+* Deploy this `war` to any web application server like Tomcat, Jetty.
 
-## Favicon
+## How to Deploy/Run
+Using Tomcat as an example:
+* Open tomcat's admin console like `http://sampleserver.com:8080/manager/html` 
+* Choose `Select WAR file to upload` , uplaod the `jaq-stack-webapp.war`
+  ![jaq-stack-sample-tomcat-admin](https://user-images.githubusercontent.com/902972/39284635-dfe0e0b6-48d9-11e8-9211-c5650ff5e8a3.png)***Image:*** *Sample Tomcat admin console screen*
+* If the deployment is successful, you can see `/jaq-stack-webapp` in the deployed applications.
+* Open a new browser and use this url `http://samplesever.com:8080/jaq-stack-webapp/` . You should see `Java Hello World!`
+  ![jaq-stack-sample-screen-browser](https://user-images.githubusercontent.com/902972/39284861-0d430d80-48db-11e8-8b96-16719b595e96.png)***Image:*** *Sample jaq-stack-webapp page on browser*
 
-If you need to override the default favicon, you can do so by passing a relative path to the icon. It’s recommended to provide a 512 x 512 version.
 
-**IMPORTANT:** For best results, if you’re providing an icon for generation it should be…
+## Testing
+* Main application `http://sampleserver:8080/jaq-stack-webapp`
+  ![jaq-stack-sample-screen-browser](https://user-images.githubusercontent.com/902972/39284861-0d430d80-48db-11e8-8b96-16719b595e96.png)***Image:*** *Sample jaq-stack-webapp page on browser*
 
-- at least as big as the largest icon being generated (512x512 by default).
-- square (if it’s not, transparent bars will add to make it square).
-- of one of the follow formats: JPEG, PNG, WebP, TIFF, GIF or SVG.
 
-```js
-plugins: [
-    {
-      resolve: 'gatsby-theme-carbon',
-      options: {
-        iconPath: './src/images/custom-icon-512.png'
-      },
-    },
-  ],
-```
+* Initializr Theme `http://sampleserver:8080/jaq-stack-webapp/initializr/` 
+  ![jaq-stack-sample-screen-webpage-initializr-angular](https://user-images.githubusercontent.com/902972/39497157-a23decd0-4d67-11e8-910e-bd5d9de73991.png)***Image:*** *Sample jaq-stack-webapp page on browser*
 
-## Additional font weights
 
-If needed, you can add support for additional Plex font weights. Don’t forget to specify italics for the additional weights if needed.
+* Sample servlet `http://sampleserver.com:8080/jaq-stack-webapp/simple`
+  ![jaq-stack-sample-screen-servlet](https://user-images.githubusercontent.com/902972/39284983-aeb1daac-48db-11e8-93c6-c3169d0de848.png)***Image:*** *Sample jaq-stack-webapp page on browser*
 
-```js
-plugins: [
-    {
-      resolve: 'gatsby-theme-carbon',
-      options: {
-		// will get added to default [300, 400, 600]
-        additionalFontWeights: ['200', '200i]
-      },
-    },
-  ],
-```
 
-## Image compression
+## Troubleshooting
+* If `mvn package` command fails showing that **ng** fails,then run try this
+  ```shell
+  sudo npm install -g @angular/cli
+  ```
 
-You can enable WebP by passing `withWebp: true` or providing your own optimization level. See the gatsby-remark-images [plugin options](https://www.gatsbyjs.org/packages/gatsby-remark-images/#options). You can also tweak the image quality based on design tolerance and performance thresholds.
-
-```js
-module.exports = {
-  plugins: [
-    {
-      resolve: 'gatsby-theme-carbon',
-      options: {
-        withWebp: true, // true, false (default false)
-        imageQuality: 50, // 0-100 (default 75)
-      },
-    },
-  ],
-};
-```
-
-## Global search
-
-Site-wide search is provided by the theme. The only requirement for a page to show up in the results is for it to have `title` set in the [frontmatter](/components/MDX#frontmatter).
-To render more helpful search results (and improve SEO), you’ll want to make sure your pages have `description` set in the frontmatter as well.
-
-Global search is enabled by default. To disable it, set the `isSearchEnabled` option to false.
-
-```js
-  plugins: [
-    {
-      resolve: 'gatsby-theme-carbon',
-      options: {
-        isSearchEnabled: false
-      },
-    },
-  ],
-```
-
-Under the hood, we use [Lunr](https://lunrjs.com/) to create our search index. If necessary, you tweak the search scoring algorithm and source nodes.
-To do so, provide your own [resolvers object](https://www.gatsbyjs.org/packages/gatsby-plugin-lunr/#getting-started) to the `lunrOptions` theme option.
-
-## Edit on GitHub link
-
-To add a link to the bottom of each page that points to the current page source in GitHub, provide a `repository` object to `siteMetadata` in your `gatsby-config.js` file. You can provide a `baseUrl`, and if needed, the `subDirectory` and `branch` where your site source lives.
-
-```js
-  plugins: [
-    {
-      resolve: 'gatsby-theme-carbon',
-      options: {
-        repository: {
-          baseUrl: 'https://github.com/carbon-design-system/gatsby-theme-carbon',
-          subDirectory: '/packages/example',
-          branch: 'master',
-        },
-      },
-    },
-  ],
-```
-
-## Medium
-
-In order to change the source account for the [`MediumPosts`](/components/MediumPosts) component, provide an account with the `mediumAccount` option.
-
-```js
-plugins: [
-  {
-    resolve: 'gatsby-theme-carbon',
-    options: {
-      mediumAccount: 'carbondesign',
-    },
-  },
-];
-```
-
-## Other options
-
-- `additionalFontWeights` – add support for additional Plex font weights. Don’t forget to specify italics for the additional weights if needed.
-- `mdxExtensions` – change the file extensions processed by `gatsby-mdx` (default ['.mdx', '.md']).
-- `pngCompressionSpeed` - a speed/quality trade-off from 1 (brute-force) to 10 (fastest). Speed 10 has 5% lower quality, but is 8 times faster than the default (4).
-- `titleType` – pick between four formats for the `<title>` element for your site. Here are the four options using this page as an example:
-
-  - `page`: "Configuration" (default)
-  - `site`: "Gatsby Theme Carbon"
-  - `append`: "Gatsby Theme Carbon – Configuration"
-  - `prepend`: "Configuration - Gatsby Theme Carbon"
-
-```js
-plugins: [
-    {
-      resolve: 'gatsby-theme-carbon',
-      options: {
-        additionalFontWeights: ['200', '200i'],
-        mdxExtensions: ['.mdx'],
-        titleType: 'append'
-      },
-    },
-  ],
-```
-
-## Additional remark plugins and override existing remark plugin configuration
-
-- `gatsbyRemarkPlugins` - An array containing gatsby remark plugin configurations to be added/overridden.
-
-### Example [Gatsby Remark Mermaid plugin](https://www.gatsbyjs.org/packages/gatsby-remark-mermaid/)
-
-For the below markdown snippet:
-
-````
-```mermaid
-graph LR
-install[Install Plugin]
-install --> configure[Configure Plugin]
-configure --> draw[Draw Fancy Diagrams]
-```
-````
-
-to turn into an image one should add the following configuration to her/his own project:
-
-```js
- plugins: [
-    {
-      resolve: 'gatsby-theme-carbon',
-      options: {
-        repository: {
-          baseUrl: 'https://github.com/carbon-design-system/gatsby-theme-carbon',
-          subDirectory: '/packages/example',
-          branch: 'master',
-        },
-        gatsbyRemarkPlugins: [
-          {
-            resolve: 'gatsby-remark-mermaid',
-            options: {
-              language: 'mermaid',
-              theme: 'dark',
-              viewport: {
-                width: 200,
-                height: 200,
-              },
-              mermaidOptions: {
-                themeCSS: '.node rect { fill: cornflowerblue; }',
-              },
-            },
-          },
-        ],
-      },
-    },
-  ],
-
-```
+* If installation of the above goes into infinite loop, then try this
+  ```
+  mkdir ~/.npm-global
+  npm config set prefix ~/.npm-global
+  export PATH=~/.npm-global/bin:$PATH
+  ```
+  Back on the command line, update your system variables: `source ~/.profile`

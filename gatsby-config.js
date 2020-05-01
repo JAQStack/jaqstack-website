@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Theme Carbon',
-    description: 'A Gatsby theme for the carbon design system',
-    keywords: 'gatsby,theme,carbon',
+    title: 'JAQ Stack Official',
+    description: 'Build websites with Java, Angular, SQL or NoSQL',
+    keywords: 'java,angular,typescript,sql,nosql,mysql,mongodb,software,development,technology,pogramming,developer',
   },
   pathPrefix: `/gtc`,
   plugins: [

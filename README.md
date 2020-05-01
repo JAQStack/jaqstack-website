@@ -1,4 +1,4 @@
-# Gatsby Theme Carbon Starter
+# The JAQ Stack
 
 ## What is this?
 
