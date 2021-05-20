@@ -1,24 +1,33 @@
-# The JAQ Stack
+# Website
 
-## What is this?
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-> Gatsby has implemented a new feature called [themes](https://www.gatsbyjs.org/docs/themes/). Themes encapsulate all of the configuration and implementation details of Gatsby websites. This is a starter-kit (boilerplate) that has a dependancy on the `gatsby-theme-carbon` package. It includes some sample content in the `src/pages` directory.
+## Installation
 
-## What’s included?
+```console
+yarn install
+```
 
-- Carbon Elements and Carbon React
-- [Emotion](https://emotion.sh) for React component styling
-- [gatsby-mdx](https://gatsby-mdx.netlify.com/) with brand new markdown components
+## Local Development
 
-## How do I use it?
+```console
+yarn start
+```
 
-`gatsby-theme-carbon` at it’s core relies on [mdx](https://mdxjs.com/) for page creation. Check out the `src/pages` directory for some examples for using mdx.
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-A key feature of Gatsby themes is component shadowing. By simply placing a component into the `src/gatsby-theme-carbon/components` location, you can override components used by the theme. You can read more about component shadowing [here](https://www.gatsbyjs.org/docs/themes/api-reference#component-shadowing).
+## Build
 
-You’re also free to make your own components and use them in your MDX pages.
+```console
+yarn build
+```
 
-## What’s Next?
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-- Migrating reusable MDX components
-- Parameters to configure Carbon theme
+## Deployment
+
+```console
+GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
