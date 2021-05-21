@@ -2,7 +2,7 @@
 module.exports = {
   title: 'JAQ Stack',
   tagline: 'the Javascript jAva sQl/nosQl teach stack to build web applications faster!',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://jaqstack.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -10,6 +10,21 @@ module.exports = {
   organizationName: 'jaqstack', // Usually your GitHub org/user name.
   projectName: 'jaqstack-website', // Usually your repo name.
   themeConfig: {
+    algolia: {
+      apiKey: 'YOUR_API_KEY',
+      indexName: 'YOUR_INDEX_NAME',
+
+      // Optional: see doc section below
+      contextualSearch: true,
+
+      // Optional: see doc section below
+      appId: 'YOUR_APP_ID',
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      //... other Algolia params
+    },
     navbar: {
       title: 'Home',
       logo: {
@@ -17,6 +32,10 @@ module.exports = {
         src: 'img/jaq-stack-logo-2019.png',
       },
       items: [
+        {
+          type: 'search',
+          position: 'right',
+        },
         {
           type: 'doc',
           docId: 'intro',
