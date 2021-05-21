@@ -1,0 +1,1 @@
+(self.webpackChunkjaqstack_site=self.webpackChunkjaqstack_site||[]).push([[773],{6353:function(e){"use strict";e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome to JAQ Stack","permalink":"/blog/welcome-to-jaq-stack"}]}')}}]);

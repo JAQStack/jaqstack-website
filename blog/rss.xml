@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>JAQ Stack Blog</title>
+        <link>https://jaqstack.com/blog</link>
+        <description>JAQ Stack Blog</description>
+        <lastBuildDate>Wed, 29 May 2019 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Welcome to JAQ Stack]]></title>
+            <link>https://jaqstack.com/blog/welcome-to-jaq-stack</link>
+            <guid>welcome-to-jaq-stack</guid>
+            <pubDate>Wed, 29 May 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[Welcome to JAQ Stack. We are just getting started.]]></description>
+        </item>
+    </channel>
+</rss>
