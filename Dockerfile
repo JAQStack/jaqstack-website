@@ -14,8 +14,8 @@ RUN if [ -f package.json ]; then \
     npm ci --only=production; \
     fi
 
-# Build the site with git info disabled
-RUN hugo --minify --cleanDestinationDir --disableGitInfo
+# Build the site with custom config that disables git info
+RUN hugo --config hugo.docker.yaml --minify --cleanDestinationDir
 
 # Stage 2: Serve with nginx
 FROM nginx:alpine
