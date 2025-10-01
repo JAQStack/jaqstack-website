@@ -1,46 +1,24 @@
-# Multi-stage build for Hugo site
-# Stage 1: Build the Hugo site
-FROM klakegg/hugo:ext-alpine AS builder
+# Simple Hugo source code container
+FROM klakegg/hugo:ext-alpine
 
 # Set working directory
 WORKDIR /src
 
-# Copy all files first
+# Copy all source files
 COPY . .
 
-# Install Node.js dependencies if package.json exists
-RUN if [ -f package.json ]; then \
-    apk add --no-cache nodejs npm && \
-    npm ci --only=production; \
-    fi
+# Install git for Hugo's git info requirements
+RUN apk add --no-cache git
 
-# Set up git repository for Hugo's git info requirements
-RUN apk add --no-cache git && \
-    git init && \
+# Set up git repository
+RUN git init && \
     git config user.email "build@docker.local" && \
     git config user.name "Docker Build" && \
     git add . && \
-    git commit -m "Initial commit for build" && \
-    git tag v1.0.0
+    git commit -m "Initial commit"
 
-# Build the site
-RUN hugo --minify --cleanDestinationDir
+# Expose port 1313 (Hugo's default dev server port)
+EXPOSE 1313
 
-# Stage 2: Serve with nginx
-FROM nginx:alpine
-
-# Copy the built site from builder stage
-COPY --from=builder /src/public /usr/share/nginx/html
-
-# Copy custom nginx configuration
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-
-# Expose port 80
-EXPOSE 80
-
-# Health check
-HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-    CMD wget --no-verbose --tries=1 --spider http://localhost/ || exit 1
-
-# Start nginx
-CMD ["nginx", "-g", "daemon off;"]
+# Start Hugo development server
+CMD ["hugo", "server", "--bind=0.0.0.0", "--port=1313", "--baseURL=http://localhost:1313"]
