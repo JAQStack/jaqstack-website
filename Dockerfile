@@ -14,6 +14,13 @@ RUN if [ -f package.json ]; then \
     npm ci --only=production; \
     fi
 
+# Initialize git repository to avoid git info errors
+RUN git init && \
+    git config user.email "build@docker.local" && \
+    git config user.name "Docker Build" && \
+    git add . && \
+    git commit -m "Initial commit for build"
+
 # Build the site
 RUN hugo --minify --cleanDestinationDir
 
