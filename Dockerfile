@@ -14,8 +14,17 @@ RUN if [ -f package.json ]; then \
     npm ci --only=production; \
     fi
 
-# Build the site with custom config that disables git info
-RUN hugo --config hugo.docker.yaml --minify --cleanDestinationDir
+# Set up git repository for Hugo's git info requirements
+RUN apk add --no-cache git && \
+    git init && \
+    git config user.email "build@docker.local" && \
+    git config user.name "Docker Build" && \
+    git add . && \
+    git commit -m "Initial commit for build" && \
+    git tag v1.0.0
+
+# Build the site
+RUN hugo --minify --cleanDestinationDir
 
 # Stage 2: Serve with nginx
 FROM nginx:alpine
