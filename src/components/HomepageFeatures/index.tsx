@@ -38,7 +38,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'AI-Ready',
-    Svg: require('@site/static/img/ai-ready.svg').default,
+    Svg: require('@site/static/img/ai-ready3.svg').default,
     description: (
       <>
         drop-in LLM connectors, retrieval layers, and prompt versioning via Helidon MCP.

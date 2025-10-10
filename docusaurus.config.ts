@@ -82,7 +82,8 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},      
+        {to: '/examples', label: 'Example Stacks', position: 'left'},      
+        {to: '/blog', label: 'Blog', position: 'left'},
         {
           type: 'search',
           position: 'right',
@@ -125,6 +126,10 @@ const config: Config = {
             {
               label: 'Blog',
               to: '/blog',
+            },
+            {
+              label: 'Examples Stacks',
+              to: '/examples',
             },
             {
               label: 'GitHub',

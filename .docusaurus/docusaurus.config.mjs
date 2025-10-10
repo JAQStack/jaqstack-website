@@ -60,6 +60,11 @@ export default {
           "label": "Docs"
         },
         {
+          "to": "/examples",
+          "label": "Example Stacks",
+          "position": "left"
+        },
+        {
           "to": "/blog",
           "label": "Blog",
           "position": "left"
@@ -107,6 +112,10 @@ export default {
             {
               "label": "Blog",
               "to": "/blog"
+            },
+            {
+              "label": "Examples Stacks",
+              "to": "/examples"
             },
             {
               "label": "GitHub",

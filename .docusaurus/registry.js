@@ -1,5 +1,6 @@
 export default {
   "__comp---site-src-pages-about-tsx-618-aa9": [() => import(/* webpackChunkName: "__comp---site-src-pages-about-tsx-618-aa9" */ "@site/src/pages/about.tsx"), "@site/src/pages/about.tsx", require.resolveWeak("@site/src/pages/about.tsx")],
+  "__comp---site-src-pages-examples-tsxb-5-e-d8b": [() => import(/* webpackChunkName: "__comp---site-src-pages-examples-tsxb-5-e-d8b" */ "@site/src/pages/examples.tsx"), "@site/src/pages/examples.tsx", require.resolveWeak("@site/src/pages/examples.tsx")],
   "__comp---site-src-pages-index-tsx-1-df-d3e": [() => import(/* webpackChunkName: "__comp---site-src-pages-index-tsx-1-df-d3e" */ "@site/src/pages/index.tsx"), "@site/src/pages/index.tsx", require.resolveWeak("@site/src/pages/index.tsx")],
   "__comp---theme-blog-archive-page-9-e-4-1d8": [() => import(/* webpackChunkName: "__comp---theme-blog-archive-page-9-e-4-1d8" */ "@theme/BlogArchivePage"), "@theme/BlogArchivePage", require.resolveWeak("@theme/BlogArchivePage")],
   "__comp---theme-blog-list-pagea-6-a-7ba": [() => import(/* webpackChunkName: "__comp---theme-blog-list-pagea-6-a-7ba" */ "@theme/BlogListPage"), "@theme/BlogListPage", require.resolveWeak("@theme/BlogListPage")],
