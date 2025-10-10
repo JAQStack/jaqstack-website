@@ -1,0 +1,21 @@
+{
+  "id": "intro",
+  "title": "What Is JAQ Stack?",
+  "description": "JAQ Stack (pronounced \"jack stack\") is a Rapid Application Development (RAD) archetype that combines three proven technologies into a single, cohesive blueprint:",
+  "source": "@site/docs/00-intro.md",
+  "sourceDirName": ".",
+  "slug": "/intro",
+  "permalink": "/docs/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/jaqstack/docs/00-intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 0,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Using Java",
+    "permalink": "/docs/using-java"
+  }
+}

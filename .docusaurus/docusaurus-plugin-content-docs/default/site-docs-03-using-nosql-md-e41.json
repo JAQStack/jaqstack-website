@@ -1,0 +1,25 @@
+{
+  "id": "using-nosql",
+  "title": "Using NoSQL",
+  "description": "Learn how to use NoSQL databases in the JAQ Stack ecosystem for flexible and scalable data storage.",
+  "source": "@site/docs/03-using-nosql.md",
+  "sourceDirName": ".",
+  "slug": "/using-nosql",
+  "permalink": "/docs/using-nosql",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/jaqstack/docs/03-using-nosql.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Using Angular",
+    "permalink": "/docs/using-angular"
+  },
+  "next": {
+    "title": "DevOps",
+    "permalink": "/docs/devops"
+  }
+}

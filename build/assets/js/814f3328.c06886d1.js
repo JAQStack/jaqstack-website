@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjaqstack_website=self.webpackChunkjaqstack_website||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome to JaqStack Website","permalink":"/blog/welcome","unlisted":false,"date":"2024-01-01T00:00:00.000Z"}]}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjaqstack_website=self.webpackChunkjaqstack_website||[]).push([[947],{6600:t=>{t.exports=JSON.parse('{"authors":[{"name":"JaqStack Team","title":"Development Team","url":"https://github.com/jaqstack","imageURL":"https://github.com/jaqstack.png","key":"jaqstack","page":null,"count":1}]}')}}]);

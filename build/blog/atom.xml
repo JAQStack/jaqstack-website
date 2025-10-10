@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://your-docusaurus-site.example.com/blog</id>
+    <title>Introducing JAQ Stack Blog</title>
+    <updated>2024-01-01T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://your-docusaurus-site.example.com/blog"/>
+    <subtitle>Introducing JAQ Stack Blog</subtitle>
+    <icon>https://your-docusaurus-site.example.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Welcome to JaqStack Website]]></title>
+        <id>https://your-docusaurus-site.example.com/blog/welcome</id>
+        <link href="https://your-docusaurus-site.example.com/blog/welcome"/>
+        <updated>2024-01-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Welcome to the JaqStack website! This is our first blog post.]]></summary>
+        <content type="html"><![CDATA[<p>Welcome to the JaqStack website! This is our first blog post.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-jaqstack">What is JaqStack?<a href="https://your-docusaurus-site.example.com/blog/welcome#what-is-jaqstack" class="hash-link" aria-label="Direct link to What is JaqStack?" title="Direct link to What is JaqStack?">​</a></h2>
+<p>JaqStack is a modern web development platform focused on building scalable and maintainable applications using the latest technologies.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="our-mission">Our Mission<a href="https://your-docusaurus-site.example.com/blog/welcome#our-mission" class="hash-link" aria-label="Direct link to Our Mission" title="Direct link to Our Mission">​</a></h2>
+<p>We're committed to:</p>
+<ul>
+<li><strong>Innovation</strong>: Using cutting-edge technologies</li>
+<li><strong>Quality</strong>: Delivering high-quality solutions</li>
+<li><strong>Community</strong>: Building a strong developer community</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="whats-next">What's Next?<a href="https://your-docusaurus-site.example.com/blog/welcome#whats-next" class="hash-link" aria-label="Direct link to What's Next?" title="Direct link to What's Next?">​</a></h2>
+<p>Stay tuned for more updates about our projects, tutorials, and insights into modern web development.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="get-involved">Get Involved<a href="https://your-docusaurus-site.example.com/blog/welcome#get-involved" class="hash-link" aria-label="Direct link to Get Involved" title="Direct link to Get Involved">​</a></h2>
+<p>We'd love to hear from you! Connect with us on:</p>
+<ul>
+<li>GitHub</li>
+<li>Twitter</li>
+<li>LinkedIn</li>
+</ul>
+<p>Thanks for visiting, and welcome to the JaqStack community!</p>]]></content>
+        <author>
+            <name>JaqStack Team</name>
+            <uri>https://github.com/jaqstack</uri>
+        </author>
+        <category label="welcome" term="welcome"/>
+        <category label="docusaurus" term="docusaurus"/>
+        <category label="typescript" term="typescript"/>
+    </entry>
+</feed>
