@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjaqstack_website=self.webpackChunkjaqstack_website||[]).push([[121],{8070:e=>{e.exports=JSON.parse('{"tags":[{"label":"welcome","permalink":"/blog/tags/welcome","count":1},{"label":"docusaurus","permalink":"/blog/tags/docusaurus","count":1},{"label":"typescript","permalink":"/blog/tags/typescript","count":1}]}')}}]);

@@ -1,0 +1,20 @@
+{
+  "id": "intro",
+  "title": "Welcome to JaqStack Website",
+  "description": "This is a Docusaurus site built with TypeScript and the classic template.",
+  "source": "@site/docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/intro",
+  "permalink": "/docs/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/intro.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "DevOps",
+    "permalink": "/docs/devops"
+  }
+}

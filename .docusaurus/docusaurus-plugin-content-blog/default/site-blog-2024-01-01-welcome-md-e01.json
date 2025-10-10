@@ -1,0 +1,50 @@
+{
+  "permalink": "/blog/welcome",
+  "editUrl": "https://github.com/jaqstack/blog/2024-01-01-welcome.md",
+  "source": "@site/blog/2024-01-01-welcome.md",
+  "title": "Welcome to JaqStack Website",
+  "description": "Welcome to the JaqStack website! This is our first blog post.",
+  "date": "2024-01-01T00:00:00.000Z",
+  "tags": [
+    {
+      "inline": true,
+      "label": "welcome",
+      "permalink": "/blog/tags/welcome"
+    },
+    {
+      "inline": true,
+      "label": "docusaurus",
+      "permalink": "/blog/tags/docusaurus"
+    },
+    {
+      "inline": true,
+      "label": "typescript",
+      "permalink": "/blog/tags/typescript"
+    }
+  ],
+  "readingTime": 0.48,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "JaqStack Team",
+      "title": "Development Team",
+      "url": "https://github.com/jaqstack",
+      "imageURL": "https://github.com/jaqstack.png",
+      "key": "jaqstack",
+      "page": null
+    }
+  ],
+  "frontMatter": {
+    "slug": "welcome",
+    "title": "Welcome to JaqStack Website",
+    "authors": [
+      "jaqstack"
+    ],
+    "tags": [
+      "welcome",
+      "docusaurus",
+      "typescript"
+    ]
+  },
+  "unlisted": false
+}

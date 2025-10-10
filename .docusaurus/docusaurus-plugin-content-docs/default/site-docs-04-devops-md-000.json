@@ -1,0 +1,21 @@
+{
+  "id": "devops",
+  "title": "DevOps",
+  "description": "Learn how to deploy, monitor, and maintain JAQ Stack applications using modern DevOps practices.",
+  "source": "@site/docs/04-devops.md",
+  "sourceDirName": ".",
+  "slug": "/devops",
+  "permalink": "/docs/devops",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/jaqstack/docs/04-devops.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Using NoSQL",
+    "permalink": "/docs/using-nosql"
+  }
+}
