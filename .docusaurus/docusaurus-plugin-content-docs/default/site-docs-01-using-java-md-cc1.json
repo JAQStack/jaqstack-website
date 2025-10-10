@@ -1,0 +1,25 @@
+{
+  "id": "using-java",
+  "title": "Using Java",
+  "description": "Learn how to use Java with Helidon in the JAQ Stack ecosystem.",
+  "source": "@site/docs/01-using-java.md",
+  "sourceDirName": ".",
+  "slug": "/using-java",
+  "permalink": "/docs/using-java",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/jaqstack/docs/01-using-java.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "What Is JAQ Stack?",
+    "permalink": "/docs/intro"
+  },
+  "next": {
+    "title": "Using Angular",
+    "permalink": "/docs/using-angular"
+  }
+}

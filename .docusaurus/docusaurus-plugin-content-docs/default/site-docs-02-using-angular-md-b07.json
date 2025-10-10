@@ -1,0 +1,25 @@
+{
+  "id": "using-angular",
+  "title": "Using Angular",
+  "description": "Learn how to use Angular in the JAQ Stack ecosystem for building modern web applications.",
+  "source": "@site/docs/02-using-angular.md",
+  "sourceDirName": ".",
+  "slug": "/using-angular",
+  "permalink": "/docs/using-angular",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/jaqstack/docs/02-using-angular.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Using Java",
+    "permalink": "/docs/using-java"
+  },
+  "next": {
+    "title": "Using NoSQL",
+    "permalink": "/docs/using-nosql"
+  }
+}
