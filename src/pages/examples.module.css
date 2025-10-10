@@ -1,0 +1,156 @@
+/**
+ * CSS for the Examples page
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.main {
+  padding: 4rem 0;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.section h2 {
+  color: #2563eb;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #3b82f6;
+  padding-bottom: 0.5rem;
+}
+
+.section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.stackInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border-left: 4px solid #3b82f6;
+}
+
+@media screen and (max-width: 768px) {
+  .stackInfo {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.techStack h4,
+.features h4 {
+  color: #2563eb;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.techStack ul,
+.features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.techStack li,
+.features li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.techStack li:last-child,
+.features li:last-child {
+  border-bottom: none;
+}
+
+.techStack strong,
+.features strong {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.actionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.actionCard {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.actionCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.actionCard h3 {
+  color: #2563eb;
+  margin-bottom: 1rem;
+}
+
+.actionCard p {
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+.actionCard .button {
+  margin: 0.5rem;
+}
+
+/* Dark theme support */
+[data-theme='dark'] .stackInfo,
+[data-theme='dark'] .actionCard {
+  background: #2d3748;
+  border-color: #4a5568;
+  color: #e2e8f0;
+}
+
+[data-theme='dark'] .techStack li,
+[data-theme='dark'] .features li {
+  border-bottom-color: #4a5568;
+}
+
+[data-theme='dark'] .actionCard p {
+  color: #a0aec0;
+}
+
+[data-theme='dark'] .section h2 {
+  color: #3b82f6;
+  border-bottom-color: #2563eb;
+}
+
+[data-theme='dark'] .techStack h4,
+[data-theme='dark'] .features h4,
+[data-theme='dark'] .actionCard h3 {
+  color: #3b82f6;
+}
+
+[data-theme='dark'] .techStack strong,
+[data-theme='dark'] .features strong {
+  color: #3b82f6;
+}

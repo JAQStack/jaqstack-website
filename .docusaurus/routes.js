@@ -83,6 +83,11 @@ export default [
     exact: true
   },
   {
+    path: '/examples',
+    component: ComponentCreator('/examples', 'd58'),
+    exact: true
+  },
+  {
     path: '/search',
     component: ComponentCreator('/search', '5de'),
     exact: true

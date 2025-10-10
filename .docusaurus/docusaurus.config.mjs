@@ -60,6 +60,11 @@ export default {
           "label": "Docs"
         },
         {
+          "to": "/examples",
+          "label": "Example Stacks",
+          "position": "left"
+        },
+        {
           "to": "/blog",
           "label": "Blog",
           "position": "left"
@@ -109,13 +114,17 @@ export default {
               "to": "/blog"
             },
             {
+              "label": "Examples Stacks",
+              "to": "/examples"
+            },
+            {
               "label": "GitHub",
               "href": "https://github.com/jaqstack"
             }
           ]
         }
       ],
-      "copyright": "Copyright © 2025 JaqStack."
+      "copyright": "Copyright © 2025 JAQ Stack."
     },
     "prism": {
       "theme": {

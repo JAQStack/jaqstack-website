@@ -82,7 +82,8 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},      
+        {to: '/examples', label: 'Example Stacks', position: 'left'},      
+        {to: '/blog', label: 'Blog', position: 'left'},
         {
           type: 'search',
           position: 'right',
@@ -127,13 +128,17 @@ const config: Config = {
               to: '/blog',
             },
             {
+              label: 'Examples Stacks',
+              to: '/examples',
+            },
+            {
               label: 'GitHub',
               href: 'https://github.com/jaqstack',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} JaqStack.`,
+      copyright: `Copyright © ${new Date().getFullYear()} JAQ Stack.`,
     },
     prism: {
       theme: prismThemes.github,

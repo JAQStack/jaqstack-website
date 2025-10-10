@@ -138,6 +138,13 @@
     "sidebar": "sidebar---blog-814-8ac",
     "content": "content---blog-welcomee-01-2e0"
   },
+  "/examples-d58": {
+    "__comp": "__comp---site-src-pages-examples-tsxb-5-e-d8b",
+    "__context": {
+      "plugin": "plugin---abouta-74-d48"
+    },
+    "config": "config---about-5-e-9-bcb"
+  },
   "/search-5de": {
     "__comp": "__comp---theme-search-page-1-a-4-d6f",
     "__context": {
