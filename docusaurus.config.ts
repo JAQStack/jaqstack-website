@@ -138,7 +138,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} JaqStack.`,
+      copyright: `Copyright © ${new Date().getFullYear()} JAQ Stack.`,
     },
     prism: {
       theme: prismThemes.github,

@@ -124,7 +124,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2025 JaqStack."
+      "copyright": "Copyright © 2025 JAQ Stack."
     },
     "prism": {
       "theme": {
