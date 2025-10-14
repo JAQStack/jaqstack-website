@@ -107,3 +107,89 @@
 [data-theme='dark'] .actionCard h3 {
   color: #3b82f6;
 }
+
+/* Tech logos styles */
+.techLogos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border: 1px solid #e9ecef;
+}
+
+.techLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-width: 100px;
+}
+
+.techLogo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.techLogo img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.2s ease;
+}
+
+.techLogo:hover img {
+  filter: grayscale(0%);
+}
+
+.techLogo span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #666;
+  text-align: center;
+}
+
+/* Dark theme for tech logos */
+[data-theme='dark'] .techLogos {
+  background: #2d3748;
+  border-color: #4a5568;
+}
+
+[data-theme='dark'] .techLogo {
+  background: #1a202c;
+}
+
+[data-theme='dark'] .techLogo span {
+  color: #a0aec0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .techLogos {
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .techLogo {
+    min-width: 80px;
+    padding: 0.75rem;
+  }
+  
+  .techLogo img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .techLogo span {
+    font-size: 0.8rem;
+  }
+}
