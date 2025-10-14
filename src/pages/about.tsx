@@ -2,6 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
+import SponsorLogos from '../components/SponsorLogos';
 import styles from './about.module.css';
 
 export default function About(): JSX.Element {
@@ -82,9 +83,50 @@ export default function About(): JSX.Element {
               </section>
 
               <section className={styles.section}>
+                <Heading as="h2">Technology Stack</Heading>
+                <p>
+                  JAQ Stack is built on a modern, proven technology foundation that combines 
+                  the best of enterprise Java development with cutting-edge web technologies. 
+                  Our stack is designed for scalability, performance, and developer productivity.
+                </p>
+                <p>
+                  From containerization with Docker to our Java backend with Helidon, 
+                  Angular frontend, and MongoDB database - every technology choice is 
+                  made with the developer experience in mind.
+                </p>
+                
+                <div className={styles.techLogos}>
+                  <div className={styles.techLogo}>
+                    <img src="/img/sponsors/docker-logo-blue.svg" alt="Docker" />
+                    <span>Docker</span>
+                  </div>
+                  <div className={styles.techLogo}>
+                    <img src="/img/sponsors/openjdk-logo.svg" alt="OpenJDK" />
+                    <span>OpenJDK</span>
+                  </div>
+                  <div className={styles.techLogo}>
+                    <img src="/img/sponsors/java-logo.svg" alt="Java" />
+                    <span>Java</span>
+                  </div>
+                  <div className={styles.techLogo}>
+                    <img src="/img/sponsors/helidon-logo.svg" alt="Helidon" />
+                    <span>Helidon</span>
+                  </div>
+                  <div className={styles.techLogo}>
+                    <img src="/img/sponsors/angular-logo.svg" alt="Angular" />
+                    <span>Angular</span>
+                  </div>
+                  <div className={styles.techLogo}>
+                    <img src="/img/sponsors/mongodb_green.svg" alt="MongoDB" />
+                    <span>MongoDB</span>
+                  </div>
+                </div>
+              </section>
+
+              <section className={styles.section}>
                 <Heading as="h2">License</Heading>
                 <p>
-                  JAQ Stack is licensed under <a href="#" target="_blank" rel="noopener noreferrer">MIT License</a>
+                  JAQ Stack is licensed under <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">MIT License</a>
                 </p>
               </section>
 
@@ -106,6 +148,7 @@ export default function About(): JSX.Element {
           </div>
         </div>
       </main>
+      
     </Layout>
   );
 }

@@ -5,7 +5,7 @@
  */
 export default {
   "title": "Introducing JAQ Stack",
-  "tagline": "JAQ Stack is a pre-built, open-source tech stack that helps developers start fast like a rapid application development (RAD) toolkit for the modern web. It removes the pain of wiring up the frontend, backend, and databases, giving you a ready-to-run foundation built on Java, Angular/JavaScript, and SQL or NoSQL. Focus on building features, not boilerplate - JAQ Stack handles the integration so your team can move from idea to prototype in days, not weeks.",
+  "tagline": "JAQ Stack is a pre-built, open-source tech stack that helps developers start fast like a rapid application development (RAD) toolkit for the modern web.",
   "favicon": "img/favicon.ico",
   "url": "https://jaqstack.com",
   "baseUrl": "/",

@@ -83,6 +83,14 @@ export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
       <div className="container">
+        <div className="text--center">
+          <Heading as="h2" className={styles.featuresTitle}>
+            Not Another Framework!
+          </Heading>
+          <p className={styles.featuresSubtitle}>
+          It removes the pain of wiring up the frontend, backend, and databases, giving you a ready-to-run foundation. Focus on building features, not boilerplate. JAQ Stack handles the integration so your team can move from idea to prototype in days, not weeks..
+          </p>
+        </div>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />

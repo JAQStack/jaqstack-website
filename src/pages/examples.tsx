@@ -159,13 +159,19 @@ export default function Examples(): JSX.Element {
                       Angular authentication, 
                       RESTful API endpoints.
                     </p>                      
-                    <a href="https://github.com/JAQStack/jaqstack-examples/tree/main/examples/basicauthentication" className="button button--primary">View Code</a>
+                    <a href="https://github.com/JAQStack/jaqstack-examples/tree/main/examples/basicauthentication" target="_blank" rel="noopener noreferrer" className="button button--primary">View Code</a>
+                  </div>
+
+                  <div className={styles.actionCard}>
+                    <Heading as="h3">Docker Ready Examples</Heading>
+                    <p>Explore examples that are ready to run with Docker.</p>
+                    <a href="https://hub.docker.com/r/jaqstack/jaqstack-examples" target="_blank" rel="noopener noreferrer" className="button button--primary">Examples on Docker Hub</a>
                   </div>
 
                   <div className={styles.actionCard}>
                     <Heading as="h3">More Community Examples</Heading>
                     <p>Explore examples shared by the JAQ Stack community.</p>
-                    <a href="https://github.com/JAQStack/jaqstack-examples" className="button button--primary">Examples on Github</a>
+                    <a href="https://github.com/JAQStack/jaqstack-examples" target="_blank" rel="noopener noreferrer" className="button button--primary">Examples on Github</a>
                   </div>
 
 {/*                      
