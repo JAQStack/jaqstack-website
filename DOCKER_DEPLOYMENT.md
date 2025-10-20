@@ -1,44 +1,48 @@
 # Docker Hub & GitHub Pages Deployment
 
-This repository includes deployment workflows for both Docker Hub and GitHub Pages.
+This repository includes deployment workflows for both Docker Hub and GitHub Pages (Docusaurus).
 
-## Docker Hub Deployment
+## Docker Hub Deployment (Docusaurus static site)
 
 ### Workflow: `.github/workflows/docker-publish.yml`
 - **Triggers**: Push to `main` branch
-- **Purpose**: Build and push Hugo site to Docker Hub
-- **Repository**: `surendocker/jaqstack-website:latest`
+- **Purpose**: Build the Docusaurus site and publish a Docker image (e.g., Nginx serving `build/`)
+- **Repository**: `jaqstack/jaqstack-website:latest`
 
 ### Setup Required:
-1. **Docker Hub Repository**: Create `surendocker/jaqstack-website`
+1. **Docker Hub Repository**: Create `jaqstack/jaqstack-website`
 2. **GitHub Secrets**:
-   - `DOCKERHUB_USERNAME`: `surendocker`
-   - `DOCKERHUB_TOKEN`: Your Docker Hub access token
+   - `DOCKERHUB_USERNAME`: `jaqstack`
+   - `DOCKERHUB_TOKEN`: Docker Hub access token
 
-## GitHub Pages Deployment
+### Notes:
+- The workflow runs `npm ci` and `npm run build` to produce the static site in `build/`.
+- Ensure your `Dockerfile` serves the `build/` directory (e.g., with Nginx).
+
+## GitHub Pages Deployment (Docusaurus)
 
 ### Workflow: `.github/workflows/docusaurus-deploy.yml`
-- **Triggers**: Push to `features/docusaurus-site` branch
+- **Triggers**: Push to the deployment branch configured in the workflow (often `main` or a release branch)
 - **Purpose**: Deploy Docusaurus site to GitHub Pages
-- **URL**: `https://yourusername.github.io/jaqstack-website`
+- **URL**: If deploying to a user/org site, `https://<user>.github.io/`. If a project site, `https://<user>.github.io/<repo>/`.
 
 ### Setup Required:
 1. **Enable GitHub Pages**:
    - Go to repository Settings → Pages
    - Source: GitHub Actions
-2. **Update Docusaurus Config** (in `features/docusaurus-site` branch):
-   ```typescript
+2. **Update Docusaurus Config** if using a project site:
+   ```ts
    // docusaurus.config.ts
    const config: Config = {
-     url: 'https://yourusername.github.io',
-     baseUrl: '/jaqstack-website/',
-     // ... rest of config
+     url: 'https://<user>.github.io',
+     baseUrl: '/<repo>/',
+     // ...
    };
    ```
 
 ## Deployment Workflow
 
-### For Hugo Site (Docker):
+### Publish Docker Image
 ```bash
 git checkout main
 git merge develop
@@ -46,19 +50,18 @@ git push origin main
 # Triggers Docker Hub deployment
 ```
 
-### For Docusaurus Site (GitHub Pages):
+### Deploy to GitHub Pages
 ```bash
-git checkout features/docusaurus-site
-git push origin features/docusaurus-site
-# Triggers GitHub Pages deployment
+git checkout main
+# push a commit that triggers the pages workflow per .github/workflows/docusaurus-deploy.yml
 ```
 
 ## Features
 
-✅ **Docker Hub**: Hugo site containerized and pushed to Docker Hub  
+✅ **Docker Hub**: Docusaurus site containerized and pushed to Docker Hub  
 ✅ **GitHub Pages**: Docusaurus site deployed to GitHub Pages  
-✅ **Automatic**: Both deployments trigger on push to respective branches  
-✅ **Isolated**: Each deployment system works independently  
+✅ **Automatic**: Deployments trigger on push to configured branches  
+✅ **Isolated**: Each deployment works independently  
 
 ## Troubleshooting
 
@@ -69,8 +72,8 @@ git push origin features/docusaurus-site
 
 ### GitHub Pages Issues:
 - Ensure GitHub Pages is enabled in repository settings
-- Check `baseUrl` matches your repository name
-- Verify the branch name in the workflow file
+- If a project site, ensure `baseUrl` matches the repository name
+- Verify the branch name and triggers in the workflow file
 
 ## Manual Deployment
 
