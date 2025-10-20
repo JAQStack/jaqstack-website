@@ -46,5 +46,9 @@
       "typescript"
     ]
   },
-  "unlisted": false
+  "unlisted": false,
+  "prevItem": {
+    "title": "JAQ Stack is Now a Docker-Sponsored Open Source Project",
+    "permalink": "/blog/docker-sponsored"
+  }
 }

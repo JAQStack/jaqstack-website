@@ -49,13 +49,16 @@
     },
     "config": "config---about-5-e-9-bcb"
   },
-  "/blog-f6e": {
+  "/blog-0a2": {
     "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
     "__context": {
       "plugin": "plugin---blog-369-22e"
     },
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
+      {
+        "content": "content---blog-068-98c"
+      },
       {
         "content": "content---bloga-17-5fc"
       }
@@ -80,6 +83,17 @@
     "sidebar": "sidebar---blog-814-8ac",
     "__props": "__props---blog-authorsef-8-44f"
   },
+  "/blog/docker-sponsored-99a": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-authorsace-e7d"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-2025-10-10-docker-sponsored-48-a-6b7"
+  },
   "/blog/tags-287": {
     "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
     "__context": {
@@ -87,6 +101,32 @@
     },
     "sidebar": "sidebar---blog-814-8ac",
     "__props": "__props---blog-tags-3-a-2-fa2"
+  },
+  "/blog/tags/announcement-4d6": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-068-98c"
+      }
+    ],
+    "__props": "__props---blog-tags-announcement-9-d-8-052"
+  },
+  "/blog/tags/docker-17e": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-068-98c"
+      }
+    ],
+    "__props": "__props---blog-tags-docker-91-a-6d8"
   },
   "/blog/tags/docusaurus-845": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
@@ -100,6 +140,19 @@
       }
     ],
     "__props": "__props---blog-tags-docusaurus-321-832"
+  },
+  "/blog/tags/open-source-81c": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-068-98c"
+      }
+    ],
+    "__props": "__props---blog-tags-open-sourceb-2-a-226"
   },
   "/blog/tags/typescript-9ba": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
@@ -140,6 +193,13 @@
   },
   "/examples-d58": {
     "__comp": "__comp---site-src-pages-examples-tsxb-5-e-d8b",
+    "__context": {
+      "plugin": "plugin---abouta-74-d48"
+    },
+    "config": "config---about-5-e-9-bcb"
+  },
+  "/jaqstack-docker-oss-462": {
+    "__comp": "__comp---site-src-pages-jaqstack-docker-oss-tsx-061-f12",
     "__context": {
       "plugin": "plugin---abouta-74-d48"
     },

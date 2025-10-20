@@ -1,5 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
+import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
 type SponsorItem = {
@@ -13,7 +14,7 @@ const SponsorList: SponsorItem[] = [
   {
     name: 'Docker',
     logo: '/img/sponsors/docker-logo-blue.svg',
-    url: 'https://hub.docker.com/search?q=jaqstack',
+    url: '/jaqstack-docker-oss',
     description: 'Sponsored OSS Program'
   },  
   {
@@ -37,7 +38,7 @@ const SponsorList: SponsorItem[] = [
   {
     name: 'Angular',
     logo: '/img/sponsors/angular-logo.svg',
-    url: 'https://https://angular.dev',
+    url: 'https://angular.dev',
     description: 'Frontend Framework'
   },
   {
@@ -65,7 +66,17 @@ function SponsorLogo({name, logo, url, description}: SponsorItem) {
     </div>
   );
 
-  return url ? (
+  if (!url) {
+    return logoElement;
+  }
+
+  const isInternal = url.startsWith('/');
+
+  return isInternal ? (
+    <Link to={url} className={styles.sponsorLink}>
+      {logoElement}
+    </Link>
+  ) : (
     <a 
       href={url} 
       target="_blank" 
@@ -74,7 +85,7 @@ function SponsorLogo({name, logo, url, description}: SponsorItem) {
     >
       {logoElement}
     </a>
-  ) : logoElement;
+  );
 }
 
 export default function SponsorLogos(): JSX.Element {

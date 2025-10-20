@@ -2,6 +2,12 @@
   "title": "Recent posts",
   "items": [
     {
+      "title": "JAQ Stack is Now a Docker-Sponsored Open Source Project",
+      "permalink": "/blog/docker-sponsored",
+      "unlisted": false,
+      "date": "2025-10-10T00:00:00.000Z"
+    },
+    {
       "title": "Welcome to JaqStack Website",
       "permalink": "/blog/welcome",
       "unlisted": false,
