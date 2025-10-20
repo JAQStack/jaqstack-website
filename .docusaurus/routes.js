@@ -44,7 +44,7 @@ export default [
   },
   {
     path: '/blog',
-    component: ComponentCreator('/blog', 'f6e'),
+    component: ComponentCreator('/blog', '0a2'),
     exact: true
   },
   {
@@ -58,13 +58,33 @@ export default [
     exact: true
   },
   {
+    path: '/blog/docker-sponsored',
+    component: ComponentCreator('/blog/docker-sponsored', '99a'),
+    exact: true
+  },
+  {
     path: '/blog/tags',
     component: ComponentCreator('/blog/tags', '287'),
     exact: true
   },
   {
+    path: '/blog/tags/announcement',
+    component: ComponentCreator('/blog/tags/announcement', '4d6'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/docker',
+    component: ComponentCreator('/blog/tags/docker', '17e'),
+    exact: true
+  },
+  {
     path: '/blog/tags/docusaurus',
     component: ComponentCreator('/blog/tags/docusaurus', '845'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/open-source',
+    component: ComponentCreator('/blog/tags/open-source', '81c'),
     exact: true
   },
   {
@@ -85,6 +105,11 @@ export default [
   {
     path: '/examples',
     component: ComponentCreator('/examples', 'd58'),
+    exact: true
+  },
+  {
+    path: '/jaqstack-docker-oss',
+    component: ComponentCreator('/jaqstack-docker-oss', '462'),
     exact: true
   },
   {

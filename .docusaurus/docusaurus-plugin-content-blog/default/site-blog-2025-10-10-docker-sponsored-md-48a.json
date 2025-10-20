@@ -1,0 +1,56 @@
+{
+  "permalink": "/blog/docker-sponsored",
+  "editUrl": "https://github.com/jaqstack/blog/2025-10-10-docker-sponsored.md",
+  "source": "@site/blog/2025-10-10-docker-sponsored.md",
+  "title": "JAQ Stack is Now a Docker-Sponsored Open Source Project",
+  "description": "JAQ Stack joins the Docker-Sponsored Open Source Program — empowering developers with free builds, rate-limit removal, and greater visibility on Docker Hub.",
+  "date": "2025-10-10T00:00:00.000Z",
+  "tags": [
+    {
+      "inline": true,
+      "label": "docker",
+      "permalink": "/blog/tags/docker"
+    },
+    {
+      "inline": true,
+      "label": "open-source",
+      "permalink": "/blog/tags/open-source"
+    },
+    {
+      "inline": true,
+      "label": "announcement",
+      "permalink": "/blog/tags/announcement"
+    }
+  ],
+  "readingTime": 1.88,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "Suren K",
+      "title": "Contributor",
+      "url": "https://github.com/thesurenk",
+      "imageURL": "https://github.com/thesurenk.png",
+      "key": "suren",
+      "page": null
+    }
+  ],
+  "frontMatter": {
+    "title": "JAQ Stack is Now a Docker-Sponsored Open Source Project",
+    "description": "JAQ Stack joins the Docker-Sponsored Open Source Program — empowering developers with free builds, rate-limit removal, and greater visibility on Docker Hub.",
+    "slug": "docker-sponsored",
+    "date": "2025-10-10T00:00:00.000Z",
+    "authors": [
+      "suren"
+    ],
+    "tags": [
+      "docker",
+      "open-source",
+      "announcement"
+    ]
+  },
+  "unlisted": false,
+  "nextItem": {
+    "title": "Welcome to JaqStack Website",
+    "permalink": "/blog/welcome"
+  }
+}
