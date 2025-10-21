@@ -66,7 +66,7 @@ If you’d like to get involved:
 
 - 🧰 [Contribute on GitHub](https://github.com/jaqstack/jaqstack)  
 - 💬 [Join the discussions](https://github.com/jaqstack/jaqstack/discussions)  
-- 🌐 [Visit jaqstack.com](https://jaqstack.com)
+- 🌐 [Visit jaqstack.org](https://jaqstack.org)
 
 ---
 

@@ -335,7 +335,7 @@ public class UserMetrics {
 - Check the [GitHub Issues](https://github.com/jaqstack/jaqstack-java/issues)
 - Join our [Discord Community](https://discord.gg/jaqstack)
 - Read the [Helidon Documentation](https://helidon.io/docs/latest/)
-- Read the [FAQ](https://docs.jaqstack.com/faq)
+- Read the [FAQ](https://docs.jaqstack.org/faq)
 
 ## Next Steps
 
