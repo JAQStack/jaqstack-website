@@ -16,6 +16,12 @@ const SponsorList: SponsorItem[] = [
     logo: '/img/sponsors/docker-logo-blue.svg',
     url: '/jaqstack-docker-oss',
     description: 'Sponsored OSS Program'
+  },
+  {
+    name: 'GitLab',
+    logo: '/img/sponsors/gitlab-logo-100-rgb.svg',
+    url: '/jaqstack-gitlab-oss',
+    description: 'Approved Open Source Project'
   },  
   {
     name: 'OpenJDK',
@@ -27,13 +33,13 @@ const SponsorList: SponsorItem[] = [
     name: 'Java',
     logo: '/img/sponsors/java-logo.svg',
     url: 'https://oracle.com/java',
-    description: 'Java Programming Language'
+    description: 'Java PL'
   },
   {
     name: 'Helidon',
     logo: '/img/sponsors/helidon-logo.svg',
     url: 'https://helidon.io',
-    description: 'Java Framework'
+    description: 'Helidon Framework'
   },
   {
     name: 'Angular',
@@ -46,7 +52,7 @@ const SponsorList: SponsorItem[] = [
     logo: '/img/sponsors/mongodb_green.svg',
     url: 'https://mongodb.com',
     description: 'NoSQL Database'
-  }
+  }  
 ];
 
 function SponsorLogo({name, logo, url, description}: SponsorItem) {

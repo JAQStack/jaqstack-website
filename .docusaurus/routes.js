@@ -44,7 +44,12 @@ export default [
   },
   {
     path: '/blog',
-    component: ComponentCreator('/blog', '0a2'),
+    component: ComponentCreator('/blog', '108'),
+    exact: true
+  },
+  {
+    path: '/blog/announcements/gitlab-supported',
+    component: ComponentCreator('/blog/announcements/gitlab-supported', '846'),
     exact: true
   },
   {
@@ -69,7 +74,7 @@ export default [
   },
   {
     path: '/blog/tags/announcement',
-    component: ComponentCreator('/blog/tags/announcement', '4d6'),
+    component: ComponentCreator('/blog/tags/announcement', '586'),
     exact: true
   },
   {
@@ -83,8 +88,13 @@ export default [
     exact: true
   },
   {
+    path: '/blog/tags/gitlab',
+    component: ComponentCreator('/blog/tags/gitlab', '484'),
+    exact: true
+  },
+  {
     path: '/blog/tags/open-source',
-    component: ComponentCreator('/blog/tags/open-source', '81c'),
+    component: ComponentCreator('/blog/tags/open-source', '53e'),
     exact: true
   },
   {
@@ -110,6 +120,11 @@ export default [
   {
     path: '/jaqstack-docker-oss',
     component: ComponentCreator('/jaqstack-docker-oss', '462'),
+    exact: true
+  },
+  {
+    path: '/jaqstack-gitlab-oss',
+    component: ComponentCreator('/jaqstack-gitlab-oss', 'bd5'),
     exact: true
   },
   {

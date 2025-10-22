@@ -49,7 +49,7 @@
     },
     "config": "config---about-5-e-9-bcb"
   },
-  "/blog-0a2": {
+  "/blog-108": {
     "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
     "__context": {
       "plugin": "plugin---blog-369-22e"
@@ -60,10 +60,24 @@
         "content": "content---blog-068-98c"
       },
       {
+        "content": "content---blogd-48-989"
+      },
+      {
         "content": "content---bloga-17-5fc"
       }
     ],
     "__props": "__props---blogc-15-573"
+  },
+  "/blog/announcements/gitlab-supported-846": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-authorsace-e7d"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-2025-10-21-gitlab-approved-3-f-6-050"
   },
   "/blog/archive-182": {
     "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
@@ -92,7 +106,7 @@
       "plugin": "plugin---blog-369-22e"
     },
     "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-2025-10-10-docker-sponsored-48-a-6b7"
+    "content": "content---blog-docker-sponsored-48-a-747"
   },
   "/blog/tags-287": {
     "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
@@ -102,7 +116,7 @@
     "sidebar": "sidebar---blog-814-8ac",
     "__props": "__props---blog-tags-3-a-2-fa2"
   },
-  "/blog/tags/announcement-4d6": {
+  "/blog/tags/announcement-586": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
       "plugin": "plugin---blog-369-22e"
@@ -111,6 +125,9 @@
     "items": [
       {
         "content": "content---blog-068-98c"
+      },
+      {
+        "content": "content---blogd-48-989"
       }
     ],
     "__props": "__props---blog-tags-announcement-9-d-8-052"
@@ -141,7 +158,20 @@
     ],
     "__props": "__props---blog-tags-docusaurus-321-832"
   },
-  "/blog/tags/open-source-81c": {
+  "/blog/tags/gitlab-484": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blogd-48-989"
+      }
+    ],
+    "__props": "__props---blog-tags-gitlabfaa-ae4"
+  },
+  "/blog/tags/open-source-53e": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
       "plugin": "plugin---blog-369-22e"
@@ -150,6 +180,9 @@
     "items": [
       {
         "content": "content---blog-068-98c"
+      },
+      {
+        "content": "content---blogd-48-989"
       }
     ],
     "__props": "__props---blog-tags-open-sourceb-2-a-226"
@@ -200,6 +233,13 @@
   },
   "/jaqstack-docker-oss-462": {
     "__comp": "__comp---site-src-pages-jaqstack-docker-oss-tsx-061-f12",
+    "__context": {
+      "plugin": "plugin---abouta-74-d48"
+    },
+    "config": "config---about-5-e-9-bcb"
+  },
+  "/jaqstack-gitlab-oss-bd5": {
+    "__comp": "__comp---site-src-pages-jaqstack-gitlab-oss-tsxae-7-039",
     "__context": {
       "plugin": "plugin---abouta-74-d48"
     },
