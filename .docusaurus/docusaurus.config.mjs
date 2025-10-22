@@ -7,7 +7,7 @@ export default {
   "title": "Introducing JAQ Stack",
   "tagline": "JAQ Stack is a pre-built, open-source tech stack that helps developers start fast like a rapid application development (RAD) toolkit for the modern web.",
   "favicon": "img/favicon.ico",
-  "url": "https://jaqstack.com",
+  "url": "https://jaqstack.org",
   "baseUrl": "/",
   "organizationName": "JAQ Stack",
   "projectName": "JAQ Stack Official Website",
