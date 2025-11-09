@@ -44,7 +44,7 @@ export default [
   },
   {
     path: '/blog',
-    component: ComponentCreator('/blog', '108'),
+    component: ComponentCreator('/blog', '915'),
     exact: true
   },
   {
@@ -68,6 +68,16 @@ export default [
     exact: true
   },
   {
+    path: '/blog/jaqstack-example-basic-auth',
+    component: ComponentCreator('/blog/jaqstack-example-basic-auth', '2d5'),
+    exact: true
+  },
+  {
+    path: '/blog/jaqstack-example-simple-blog',
+    component: ComponentCreator('/blog/jaqstack-example-simple-blog', '15d'),
+    exact: true
+  },
+  {
     path: '/blog/tags',
     component: ComponentCreator('/blog/tags', '287'),
     exact: true
@@ -84,7 +94,7 @@ export default [
   },
   {
     path: '/blog/tags/docusaurus',
-    component: ComponentCreator('/blog/tags/docusaurus', '845'),
+    component: ComponentCreator('/blog/tags/docusaurus', '4aa'),
     exact: true
   },
   {
@@ -99,12 +109,12 @@ export default [
   },
   {
     path: '/blog/tags/typescript',
-    component: ComponentCreator('/blog/tags/typescript', '9ba'),
+    component: ComponentCreator('/blog/tags/typescript', '62e'),
     exact: true
   },
   {
     path: '/blog/tags/welcome',
-    component: ComponentCreator('/blog/tags/welcome', '269'),
+    component: ComponentCreator('/blog/tags/welcome', '2b6'),
     exact: true
   },
   {

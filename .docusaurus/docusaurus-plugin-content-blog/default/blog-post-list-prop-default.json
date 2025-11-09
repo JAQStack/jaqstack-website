@@ -2,6 +2,18 @@
   "title": "Recent posts",
   "items": [
     {
+      "title": "Simple Blog",
+      "permalink": "/blog/jaqstack-example-simple-blog",
+      "unlisted": false,
+      "date": "2025-11-09T00:00:00.000Z"
+    },
+    {
+      "title": "Basic Authentication",
+      "permalink": "/blog/jaqstack-example-basic-auth",
+      "unlisted": false,
+      "date": "2025-11-01T00:00:00.000Z"
+    },
+    {
       "title": "JAQ Stack is Now a Docker-Sponsored Open Source Project",
       "permalink": "/blog/docker-sponsored",
       "unlisted": false,

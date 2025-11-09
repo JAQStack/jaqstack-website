@@ -49,13 +49,19 @@
     },
     "config": "config---about-5-e-9-bcb"
   },
-  "/blog-108": {
+  "/blog-915": {
     "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
     "__context": {
       "plugin": "plugin---blog-369-22e"
     },
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
+      {
+        "content": "content---blogddb-a29"
+      },
+      {
+        "content": "content---blog-0-b-7-067"
+      },
       {
         "content": "content---blog-068-98c"
       },
@@ -108,6 +114,28 @@
     "sidebar": "sidebar---blog-814-8ac",
     "content": "content---blog-docker-sponsored-48-a-747"
   },
+  "/blog/jaqstack-example-basic-auth-2d5": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-announcements-gitlab-supportedace-e35"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-jaqstack-example-basic-authdbd-8d7"
+  },
+  "/blog/jaqstack-example-simple-blog-15d": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-announcements-gitlab-supportedace-e35"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-jaqstack-example-simple-blog-339-744"
+  },
   "/blog/tags-287": {
     "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
     "__context": {
@@ -145,13 +173,19 @@
     ],
     "__props": "__props---blog-tags-docker-91-a-6d8"
   },
-  "/blog/tags/docusaurus-845": {
+  "/blog/tags/docusaurus-4aa": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
       "plugin": "plugin---blog-369-22e"
     },
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
+      {
+        "content": "content---blogddb-a29"
+      },
+      {
+        "content": "content---blog-0-b-7-067"
+      },
       {
         "content": "content---bloga-17-5fc"
       }
@@ -187,7 +221,7 @@
     ],
     "__props": "__props---blog-tags-open-sourceb-2-a-226"
   },
-  "/blog/tags/typescript-9ba": {
+  "/blog/tags/typescript-62e": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
       "plugin": "plugin---blog-369-22e"
@@ -195,18 +229,30 @@
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
       {
+        "content": "content---blogddb-a29"
+      },
+      {
+        "content": "content---blog-0-b-7-067"
+      },
+      {
         "content": "content---bloga-17-5fc"
       }
     ],
     "__props": "__props---blog-tags-typescript-832-7dd"
   },
-  "/blog/tags/welcome-269": {
+  "/blog/tags/welcome-2b6": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
       "plugin": "plugin---blog-369-22e"
     },
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
+      {
+        "content": "content---blogddb-a29"
+      },
+      {
+        "content": "content---blog-0-b-7-067"
+      },
       {
         "content": "content---bloga-17-5fc"
       }
