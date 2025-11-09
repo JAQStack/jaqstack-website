@@ -72,12 +72,12 @@
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---blog-authorsace-e7d"
+        "blogMetadata": "blogMetadata---blog-announcements-gitlab-supportedace-e35"
       },
       "plugin": "plugin---blog-369-22e"
     },
     "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-2025-10-21-gitlab-approved-3-f-6-050"
+    "content": "content---blog-announcements-gitlab-supported-3-f-6-03b"
   },
   "/blog/archive-182": {
     "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
@@ -90,7 +90,7 @@
     "__comp": "__comp---theme-blog-pages-blog-authors-list-page-621-70c",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---blog-authorsace-e7d"
+        "blogMetadata": "blogMetadata---blog-announcements-gitlab-supportedace-e35"
       },
       "plugin": "plugin---blog-369-22e"
     },
@@ -101,7 +101,7 @@
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---blog-authorsace-e7d"
+        "blogMetadata": "blogMetadata---blog-announcements-gitlab-supportedace-e35"
       },
       "plugin": "plugin---blog-369-22e"
     },
@@ -217,7 +217,7 @@
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---blog-authorsace-e7d"
+        "blogMetadata": "blogMetadata---blog-announcements-gitlab-supportedace-e35"
       },
       "plugin": "plugin---blog-369-22e"
     },
