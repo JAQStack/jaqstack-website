@@ -49,6 +49,10 @@
     ]
   },
   "unlisted": false,
+  "prevItem": {
+    "title": "Basic Authentication",
+    "permalink": "/blog/jaqstack-example-basic-auth"
+  },
   "nextItem": {
     "title": "JAQ Stack is Now a GitLab Supported Open Source Project 🦊",
     "permalink": "/blog/announcements/gitlab-supported"

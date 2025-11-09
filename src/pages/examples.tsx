@@ -163,6 +163,18 @@ export default function Examples(): JSX.Element {
                   </div>
 
                   <div className={styles.actionCard}>
+                    <Heading as="h3">Simple Blog</Heading>
+                    <p>Modern blog application built with Java 21, Helidon MP, Angular 20, and MongoDB. Features:
+                      Create and view blog posts,
+                      RESTful API with Helidon MP,
+                      Angular 20 frontend,
+                      MongoDB document storage,
+                      CORS handling for full-stack integration.
+                    </p>                      
+                    <a href="https://github.com/JAQStack/jaqstack-examples/tree/main/examples/simpleblog" target="_blank" rel="noopener noreferrer" className="button button--primary">View Code</a>
+                  </div>
+
+                  <div className={styles.actionCard}>
                     <Heading as="h3">Docker Ready Examples</Heading>
                     <p>Explore examples that are ready to run with Docker.</p>
                     <a href="https://hub.docker.com/r/jaqstack/jaqstack-examples" target="_blank" rel="noopener noreferrer" className="button button--primary">Examples on Docker Hub</a>
